@@ -1,0 +1,59 @@
+[debug] [2022-06-07T15:48:19.938Z] ----------------------------------------------------------------------
+[debug] [2022-06-07T15:48:19.941Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Joelad\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-06-07T15:48:19.942Z] CLI Version:   7.16.2
+[debug] [2022-06-07T15:48:19.942Z] Platform:      win32
+[debug] [2022-06-07T15:48:19.942Z] Node Version:  v14.17.2
+[debug] [2022-06-07T15:48:19.944Z] Time:          Tue Jun 07 2022 21:18:19 GMT+0530 (India Standard Time)
+[debug] [2022-06-07T15:48:19.944Z] ----------------------------------------------------------------------
+[debug] [2022-06-07T15:48:19.944Z] 
+[debug] [2022-06-07T15:48:19.954Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-07T15:48:19.955Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\mreng\staging\app\mreng
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2022-06-07T15:49:16.172Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-06-07T15:49:16.172Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-06-07T15:49:16.405Z] <<< HTTP RESPONSE 400
+[debug] [2022-06-07T15:49:16.407Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2022-06-07T15:49:17.926Z] <<< HTTP RESPONSE 401
+[debug] [2022-06-07T15:49:17.926Z] <<< HTTP RESPONSE BODY
+[debug] [2022-06-07T15:49:17.928Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-06-07T15:49:18.053Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\Joelad\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\Joelad\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:40:35)
+    at Request.self.callback (C:\Users\Joelad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at Request.<anonymous> (C:\Users\Joelad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:375:28)
+    at Request.emit (domain.js:470:12)
+    at IncomingMessage.<anonymous> (C:\Users\Joelad\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:481:28)
+    at IncomingMessage.emit (events.js:387:35)
+    at IncomingMessage.emit (domain.js:470:12)
+    at endReadableNT (internal/streams/readable.js:1317:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
