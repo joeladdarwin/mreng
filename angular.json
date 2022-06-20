@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mreng"
+    }
+  },
+  "defaultProject": "mreng",
+  "cli": {
+    "analytics": "dcf891bc-2695-4169-a143-b813dce7d6c1"
+  }
 }
